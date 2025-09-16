@@ -1,0 +1,43 @@
+nav {
+  background-color: var(--layout-bg);
+  display: flex;
+  color: var(--layout-text);
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 1rem;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.modal-buttons button {
+  color: var(--layout-text);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.login {
+  background-color: var(--color-primary);
+}
+
+.login:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.sign-up {
+  background-color: var(--color-secondary);
+}
+.sign-up:hover {
+  background-color: var(--color-secondary-hover);
+}
