@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
+import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
@@ -7,7 +7,7 @@ const Footer = () => {
         <p>
           &copy; {new Date().getFullYear()} Just Do It. All rights reserved.
         </p>
-        <div>
+        <div className="social-icons">
           <a
             href="https://github.com/maicol240"
             target="_blank"

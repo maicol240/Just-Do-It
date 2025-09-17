@@ -1,0 +1,20 @@
+footer {
+  background-color: var(--layout-bg);
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  color: var(--layout-text);
+}
+
+.social-icons a {
+  display: block;
+  color: var(--layout-tex);
+}
+
+/* spacing and aligment for social icons */
+.social-icons {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  gap: 20px;
+}
