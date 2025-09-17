@@ -1,3 +1,4 @@
+/* header container and aligment */
 nav {
   background-color: var(--layout-bg);
   display: flex;
@@ -11,13 +12,14 @@ h1 {
   margin: 0;
   font-size: clamp(1rem, 2.5vw, 2rem);
 }
-
+/* buttons container and aligment */
 .modal-buttons {
   display: flex;
   gap: 1rem;
   font-size: clamp(0.8rem, 2vw, 1.2rem);
 }
 
+/* button styling and hover effects */
 .modal-buttons button {
   color: var(--layout-text);
   border: none;
