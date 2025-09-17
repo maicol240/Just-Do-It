@@ -10,6 +10,7 @@
   --color-primary-hover: #1b3d8a;
   --color-secondary: #dd5b5be1;
   --color-secondary-hover: #d14d4db3;
+  --color-theme: white;
 }
 
 body {

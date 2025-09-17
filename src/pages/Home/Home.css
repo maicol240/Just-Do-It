@@ -1,0 +1,35 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-content: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 2rem;
+  background-color: var(--color-theme);
+  color: var(--primary-color);
+  text-align: center;
+}
+
+main button {
+  background-color: var(--color-primary);
+  color: var(--layout-text);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rems;
+  width: 150px;
+  align-self: center;
+}
+
+main button:hover {
+  background-color: var(--color-primary-hover);
+}
