@@ -9,9 +9,14 @@ const Home = () => {
   const [loginIsOpen, setLoginIsOpen] = useState(false);
   const [signUpIsOpen, setSignUpIsOpen] = useState(false);
 
-  //Handles login and signup button clicks
+  //Handles login and signup button clicks to show modals
   const handleButtonClick = (setOpenModal) => () => {
     setOpenModal(true);
+  };
+
+  //closes modal on form submission
+  const onSubmitCloseModal = (setOpenModal) => () => {
+    setOpenModal(false);
   };
 
   return (
@@ -19,13 +24,17 @@ const Home = () => {
       {/* Login Modal */}
 
       <Modal isOpen={loginIsOpen} onClose={() => setLoginIsOpen(false)}>
-        {loginIsOpen && <LoginForm onSubmit={() => {}} />}
+        {loginIsOpen && (
+          <LoginForm onClose={onSubmitCloseModal(setLoginIsOpen)} />
+        )}
       </Modal>
 
       {/* SignUpModal */}
 
       <Modal isOpen={signUpIsOpen} onClose={() => setSignUpIsOpen(false)}>
-        {signUpIsOpen && <SignUpForm onSubmit={() => {}} />}
+        {signUpIsOpen && (
+          <SignUpForm onClose={onSubmitCloseModal(setSignUpIsOpen)} />
+        )}
       </Modal>
 
       <div className="home-container">
