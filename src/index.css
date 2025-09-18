@@ -18,7 +18,8 @@ body {
 }
 
 .error,
-.input-error {
+.input-error,
+.error-message {
   color: red;
 }
 
