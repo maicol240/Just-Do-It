@@ -8,17 +8,23 @@ import "./Home.css";
 const Home = () => {
   const [loginIsOpen, setLoginIsOpen] = useState(false);
 
-  const handleLoginClick = () => {
-    setLoginIsOpen(true);
+  //Handles login and signup button clicks
+  const handleButtonClick = (setOpenModal) => () => {
+    setOpenModal(true);
   };
 
   return (
     <>
+      {/* Login Modal */}
+
       <Modal isOpen={loginIsOpen} onClose={() => setLoginIsOpen(false)}>
-        <LoginForm onSubmit={() => {}} />
+        {loginIsOpen && <LoginForm onSubmit={() => {}} />}
       </Modal>
+
+      {/* SignUpModal */}
+
       <div className="home-container">
-        <Header loginModal={handleLoginClick} />
+        <Header loginModal={handleButtonClick(setLoginIsOpen)} />
         <main className="main-content">
           <h1>Achieve More with Effortless Task Management</h1>
           <p>
