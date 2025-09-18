@@ -1,0 +1,22 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid #ccc;
+  width: fit-content;
+  padding: 20px;
+  box-shadow: inset 0 0 10px #ccc;
+  font-size: small;
+}
+
+label,
+input {
+  display: block;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--layout-text);
+  border-radius: 4px;
+}
