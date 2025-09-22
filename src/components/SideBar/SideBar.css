@@ -1,0 +1,108 @@
+/* Side Bar Content */
+.sideBar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 250px;
+  padding: 20px;
+  background-color: var(--layout-bg);
+  color: white;
+  font-family: "Inter", sans-serif;
+  gap: 4px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sideBar-container > *:not(:last-child) {
+  border-bottom: 0.1px solid rgb(175, 174, 174);
+}
+/* Header Tittle */
+.sideBar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px white;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Navigation */
+.nav {
+  list-style: none;
+  padding: 0 5px;
+}
+/* icon and text wrapper */
+.nav-link {
+  display: flex;
+  color: #d1d5db;
+  text-decoration: none;
+  height: 40px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  padding: 0 10px;
+}
+
+.active,
+.nav-link:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.nav-item {
+  margin: 10px 0;
+}
+
+/* Projects */
+
+.projects-section {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.projects-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-project-icon {
+  cursor: pointer;
+  color: #9ca3af;
+}
+.add-project-icon:hover {
+  color: white;
+}
+
+.project-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 40px;
+}
+
+.project-color {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.project-item:hover {
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  font-size: 12px;
+  text-align: center;
+}
