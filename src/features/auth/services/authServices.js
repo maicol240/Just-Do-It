@@ -6,9 +6,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 
-import { collection, addDoc, setDoc } from "firebase/firestore";
-
-const usersCollectionRef = collection(db, "users");
+import { setDoc } from "firebase/firestore";
 
 export const signIn = async (email, password) => {
   try {
